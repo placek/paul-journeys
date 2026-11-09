@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa podróży Pawła</title>
+<link rel="stylesheet" href="./vendor/leaflet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+html,body{height:100%;margin:0;background:#e6dabf;font-family:'Cormorant Garamond',serif}
+body{display:flex;flex-direction:column;gap:8px}
+#pmap-filters{display:flex;flex-wrap:wrap;gap:8px;padding:2px 2px 0}
+#pmap{flex:1;min-height:0;border:1px solid #c9b78f;box-shadow:0 6px 20px -16px rgba(42,32,22,.22);background:#d9cba8}
+#pmap .leaflet-tile-pane{filter:sepia(.6) saturate(.75) contrast(.95) brightness(1.02)}
+#pmap .leaflet-popup-content-wrapper,#pmap .leaflet-popup-tip{background:#efe6d2;border-radius:0}
+#pmap .leaflet-container{font-family:inherit}
+button:focus-visible,a:focus-visible{outline:2px solid #b98a1f;outline-offset:2px}
+</style>
+</head>
+<body>
+<div id="pmap-filters"></div>
+<div id="pmap"></div>
+<script src="./vendor/leaflet.js"></script>
+<script src="./map-data.js"></script>
+<script src="./map.js"></script>
+</body>
+</html>
